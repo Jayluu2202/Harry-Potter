@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Harry_PotterApp: App {
+    @State var booksVM: testAPI = testAPI()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(booksVM)
         }
     }
 }
